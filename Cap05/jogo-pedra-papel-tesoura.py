@@ -6,8 +6,8 @@ print("Regras: escolha entre 'pedra'. 'papel' ou 'tesoura'.")
 jogador1 = input("Insira o nome do primeiro jogador: ")
 jogador2 = input("Insira o nome do segundo jogador: ")
 
-jogada1 = input(f"{jogador1}, faça a sua escolha: pedra, papel ou tesoura? ").strip().lower()
-jogada2 = input(f"{jogador2}, faça a sua escolha: pedra, papel ou tesoura? ").strip().lower()
+jogada1 = input(f"{jogador1}, faça a sua escolha: pedra, papel ou tesoura? ").strip().lower().replace(" ", "")
+jogada2 = input(f"{jogador2}, faça a sua escolha: pedra, papel ou tesoura? ").strip().lower().replace(" ", "")
 
 if jogada1 == "pedra" and jogada2 == "pedra":
     print("Empate! Jogue novamente.")
