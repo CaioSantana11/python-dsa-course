@@ -11,7 +11,9 @@ jogada2 = input(f"{jogador2}, faça a sua escolha: pedra, papel ou tesoura? ").s
 
 if jogada1 == jogada2:
     print("Empate! Jogue novamente.")
-elif jogada1 == "tesoura" and jogada2 == "papel" or jogada1 == "pedra" and jogada2 == "tesoura" or jogada1 == "papel" and jogada2 == "tesoura":
+elif jogada1 == "tesoura" and jogada2 == "papel" or \
+    jogada1 == "pedra" and jogada2 == "tesoura" or \
+    jogada1 == "papel" and jogada2 == "tesoura":
     print(f"{jogador1} venceu!")
 else:
     print(f"{jogador2} venceu!")
